@@ -1,0 +1,26 @@
+load("binaryTree.js");
+load("bst.js");
+var nums = new BST();
+nums.insert(23);
+nums.insert(45);
+nums.insert(16);
+nums.insert(37);
+nums.insert(3);
+nums.insert(99);
+nums.insert(22);
+print("Inorder traveral: ");
+inOrder(nums.root);
+print("\n");
+write("Enter a value to remove: ");
+var value = parseInt(readline());
+var found = nums.find(value);
+if (found !== null) {
+ print("Found " + value + " in the BST.");
+}
+else {
+ print(value + " was not found in the BST.");
+}
+nums.remove(value);
+print('Inorder traversal after removal:');
+inOrder(nums.root);
+write("\n");
