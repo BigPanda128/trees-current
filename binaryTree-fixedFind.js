@@ -24,7 +24,7 @@ function BT() {
  this.postOrder = postOrder;
  this.getSmallest = getSmallest;
  }
-
+//found problem with this mehtod, not sure how to even tackle handling it
 BT.prototype.insert = function(data) {
  var n = new Node(data, null, null);
    if (this.root === null) {
