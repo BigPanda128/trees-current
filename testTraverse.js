@@ -10,8 +10,9 @@ nums.insert(3);
 nums.insert(99);
 nums.insert(22);
 // Added Capouch next two lines
-nums.insert(70);
+//nums.insert(70);
 print("Height of tree: " + nums.height(nums.root));
+print("root node is: " + nums.root.left.right.data);
 print("Inorder traversal: ");
 nums.inOrder(nums.root);
 print();
